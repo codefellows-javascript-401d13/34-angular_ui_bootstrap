@@ -1,0 +1,40 @@
+@import "../../../scss/lib/theme/vars";
+@import "../gallery-item/gallery-item";
+
+.edit-gallery {
+  @extend .current-item;
+  padding-top: 2.5vw
+}
+
+.gallery-item {
+  margin-bottom: 4vw;
+
+  .btn-gallery {
+    margin-right: 4.5vw;
+  }
+}
+
+fieldset { 
+  .item-label {
+    float: left;
+  }
+
+  .input-std {
+    float: right;
+    margin-right: 2vw;
+  }
+}
+
+fieldset:first-child {
+  .input-std {
+    width: 80%;
+    background: $brand-primary * 2.5;
+  }
+}
+
+fieldset:last-child {
+  .input-std {
+    width: 75%;
+    background: $brand-primary * 2.5;
+  }
+}

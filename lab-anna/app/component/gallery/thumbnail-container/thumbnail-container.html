@@ -1,0 +1,9 @@
+<div class="thumbnail-container">
+  <h3 class="prompt2">{{ thumbnailContainerCtrl.gallery.name }}</h3>
+  <pic-upload gallery="thumbnailContainerCtrl.gallery"></pic-upload>
+
+  <div class="thumbs">
+    <thumbnail ng-repeat="item in thumbnailContainerCtrl.gallery.pics" pic="item"
+               galleryid="thumbnailContainerCtrl.gallery._id"></thumbnail>
+  </div>
+</div>
