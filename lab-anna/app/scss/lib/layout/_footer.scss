@@ -1,0 +1,9 @@
+@import "../theme/vars";
+
+footer {
+  box-sizing: border-box;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 15vh;
+  background: $brand-primary;
+}

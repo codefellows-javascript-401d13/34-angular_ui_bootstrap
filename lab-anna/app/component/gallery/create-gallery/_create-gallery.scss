@@ -1,0 +1,14 @@
+@import "../../../scss/lib/theme/vars";
+
+.prompt {
+  font-size: 2vw;
+  margin: 4vw 0 3vw .5vw;
+  display: inline-block;
+}
+
+.prompt2 {
+  @extend .prompt;
+  margin-left: 3.5vw;
+  margin-bottom: 1vw;
+
+}

@@ -1,0 +1,18 @@
+<section class="home">
+  <create-gallery></create-gallery>
+
+  <input class="srch" ng-model="homeCtrl.gallerySearchTerm" type="text" placeholder="search">
+
+  <div class="clearfix"></div>
+  <ul>
+    <span class="prompt2" ng-if="homeCtrl.galleries.length > 0">Galleries</span>
+    <gallery-item
+      ng-repeat="item in homeCtrl.galleries | limitTo: 4 | gallerySearch: homeCtrl.gallerySearchTerm"
+      gallery="item"
+      delete-done="homeCtrl.galleryDeleteDone(galleryData)"
+      ng-click="homeCtrl.currentGallery = item">
+    </gallery-item>
+  </ul>
+
+  <thumbnail-container ng-if="homeCtrl.currentGallery" gallery="homeCtrl.currentGallery"></thumbnail-container>
+</section>

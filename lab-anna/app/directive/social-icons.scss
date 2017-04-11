@@ -1,0 +1,33 @@
+@import "../scss/lib/theme/vars";
+
+.icons {
+  margin-right: 18vw;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 30vw;
+  margin-left: 30vw;
+  color: transparent;
+  filter: grayscale(100%);
+}
+.social-icon:nth-child(1) {
+  background: url('../../assets/social-sheet.png') no-repeat -19px -22px;
+  width: 268px;
+  height: 269px;
+  zoom: 0.15;
+}
+
+.social-icon:nth-child(2) {
+  background: url('../../assets/social-sheet.png') no-repeat -350px -25px;
+  width: 275px;
+  height: 268px;
+  zoom: 0.15;
+}
+
+.social-icon:nth-child(3) {
+  background: url('../../assets/social-sheet.png') no-repeat -19px -361px;
+  width: 268px;
+  height: 269px;
+  zoom: 0.15;
+}

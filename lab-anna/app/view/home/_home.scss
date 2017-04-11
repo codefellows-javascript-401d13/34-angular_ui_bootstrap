@@ -1,0 +1,15 @@
+@import "../../scss/lib/theme/vars";
+
+
+.btn-sm {
+  display: inline-block;
+  background: $brand-primary;
+  border-radius: $btn-radius;
+  width: 55%;
+}
+
+.srch {
+  width: 89%;
+  display: block;
+  margin: 10vw 3vw 0;
+}

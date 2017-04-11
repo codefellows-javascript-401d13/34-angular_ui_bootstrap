@@ -1,0 +1,23 @@
+@import "../theme/vars";
+
+header {
+  box-sizing: border-box;
+  background: $brand-primary;
+  width: 80vw;
+  height: 15vh;
+  margin: 0 auto;
+  color: $white;
+  img {
+    height: 5vw;
+    width: 5vw;
+    margin: 2vw;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h2 {
+    font: $font-std;
+    font-size: 4vw;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../scss/lib/theme/vars";
+
+form {
+  width: 95%;
+  padding-top: $gutter-std;
+  margin: 0 auto;
+}
+
+input {
+  width: 95%;
+  margin: 0 auto $gutter-std * 2 auto;
+  height: 10vh;
+  border-radius: $btn-radius;
+  font-size: 2.5vw;
+  padding-left: $gutter-std;
+  border: 1px solid $brand-primary * 1.3;
+}
+
+h2 {
+  font: $font-std;
+  font-size: 3vw;
+  display: inline-block;
+  margin: $gutter-std 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.btn-std {
+  background: $btn-primary;
+  height: 10vh;
+  width: 33%;
+  float: right;
+  margin-right: $gutter-std + 1;
+  border-radius: $btn-radius;
+  border: none;
+  color: $white;
+  font-size: 2.5vw;
+  &:hover {
+    background: $brand-primary * 2;
+  }
+}
+
+.no-btn {
+  display: block;
+  float: right;
+  margin: $gutter-std;
+  margin-right: $gutter-std * 3;
+  font-size: 2vw;
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+
+  }
+}
+
+.btn-gallery {
+  @extend .btn-std;
+  // margin-right: 1vw;
+  width: 20%;
+  height: 3vw;
+  padding: 1vw;
+  text-align: center;
+  cursor: pointer;
+}

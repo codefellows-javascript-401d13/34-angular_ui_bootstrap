@@ -1,0 +1,29 @@
+@import "../../../scss/lib/theme/vars";
+@import "../gallery-item/gallery-item";
+@import "../thumbnail-container/thumbnail-container";
+@import "../edit-gallery/edit-gallery";
+// @import "../thumbnail/thumbnail";
+
+.input-pic {
+  @extend .current-item;
+
+}
+
+.btn-thumbnail {
+  height: 5vw;
+}
+
+.pic-upload {
+  .prompt2 {
+    // margin-left: 2vw;
+    text-decoration: underline;
+  }
+}
+
+.grab-img {
+  display: inline-block;
+  margin-left: 22vw;
+  font-size: 2vw;
+  margin-top: 2vw;
+  text-decoration: underline;
+}
