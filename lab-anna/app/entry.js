@@ -9,13 +9,15 @@ const pascalcase = require('pascalcase');
 const uiRouter = require('angular-ui-router');
 const ngTouch = require('angular-touch');
 const ngAnimate = require('angular-animate');
+const uiBootstrap = require('angular-ui-bootstrap');
+
 const ngFileUpload = require('ng-file-upload');
 
-const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, uiBootstrap, ngFileUpload, 'ui.bootstrap.modal']);
 
 let context = require.context('./config/', true, /\.js$/);
-context.keys().forEach( key => {
-  cfgram.config(context(key));
+context.keys().forEach( path => {
+  cfgram.config(context(path));
 });
 
 context = require.context('./view/', true, /\.js$/);
@@ -37,18 +39,4 @@ context.keys().forEach( key => {
   let name = camelcase(path.basename(key, '.js'));
   let module = context(key);
   cfgram.component(name, module);
-});
-
-context = require.context('./filter/', true, /\.js$/);
-context.keys().forEach( key => {
-  let name = camelcase(path.basename(key, '.js'));
-  let module = context(key);
-  cfgram.filter(name, module);
-});
-
-context = require.context('./directive/', true, /\.js$/);
-context.keys().forEach( key => {
-  let name = camelcase(path.basename(key, '.js'));
-  let module = context(key);
-  cfgram.directive(name, module);
 });
